@@ -21,7 +21,7 @@ define( 'HG_DEFAULT_CATEGORY', 'destaques');
 require_once __DIR__ . '/widget/highlights-gallery-widget.php';
 
 // Load Widget
-function hgw_log_widget() {
+function hgw_load_widget() {
     register_widget( 'hgw_widget' );
 }
-add_action( 'widgets_init', 'hgw_log_widget' );
+add_action( 'widgets_init', 'hgw_load_widget' );
