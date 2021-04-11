@@ -1,0 +1,96 @@
+/**
+ * Plugin styles
+ */
+.hgw_carousel {
+    width: 100%;
+    margin-bottom: 70px !important;
+}
+
+.hgw_carousel .hgw_carousel_item {
+    margin-bottom: 0;
+}
+
+.hgw_carousel .hgw_carousel_img {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border: 1px solid black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hgw_carousel .hgw_anchor_container {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.hgw_carousel .hgw_bg_blur {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 260px;
+    filter: blur(5px);
+}
+
+.hgw_carousel .hgw_title_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 115px;
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+    border-top: 3px solid #e6c619;
+}
+
+.hgw_carousel .hgw_title_container p {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/**
+ * Desktop
+ */
+
+/**
+ * >= 910px
+ */
+@media screen and (min-width: 56.875em) {
+    .hgw_carousel {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px !important;
+    }
+    
+    .hgw_carousel .hgw_carousel_item {
+        margin-bottom: 15px;
+    }
+    
+    .hgw_carousel .hgw_carousel_img {
+        height: 300px;
+        border-radius: 4px 4px 0px 0;
+        border: 1px solid black;
+    }
+
+    .hgw_carousel .hgw_bg_blur {
+        max-height: unset;
+    }
+    
+    .hgw_carousel .hgw_title_container {
+        min-height: unset;
+        display: block;
+        border-radius: 0 0 4px 4px;
+        background-color: black;
+    }
+
+    .hgw_carousel .hgw_title_container p {
+        color: white;
+    }
+}
